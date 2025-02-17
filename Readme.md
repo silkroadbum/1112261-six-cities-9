@@ -1,7 +1,7 @@
 # Личный проект «Шесть городов»
 
-* Студент: [Анатолий Егоров](https://up.htmlacademy.ru/nodejs-api/9/user/1112261).
-* Наставник: `Неизвестно`.
+- Студент: [Анатолий Егоров](https://up.htmlacademy.ru/nodejs-api/9/user/1112261).
+- Наставник: [Илиас Эззахид](https://htmlacademy.ru/profile/id2588943).
 
 ---
 
