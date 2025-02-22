@@ -1,8 +1,9 @@
+import { CommandEnum } from "../consts/index.js";
 import { Command } from "./command.interface.js";
 
 export class HelpCommand implements Command {
-  public getName(): string {
-    return "--help";
+  public getName(): CommandEnum {
+    return CommandEnum.Help;
   }
 
   public async execute(..._parameters: string[]): Promise<void> {

@@ -1,9 +1,10 @@
 import { Command } from "./command.interface.js";
 import { TSVFileReader } from "../../shared/libs/file-reader/index.js";
+import { CommandEnum } from "../consts/index.js";
 
 export class ImportCommand implements Command {
-  public getName(): string {
-    return "--import";
+  public getName(): CommandEnum {
+    return CommandEnum.Import;
   }
 
   public execute(...parameters: string[]): void {
