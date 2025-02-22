@@ -1,5 +1,3 @@
-import chalk from "chalk";
-
 import { Command } from "./command.interface.js";
 import { TSVFileReader } from "../../shared/libs/file-reader/index.js";
 import { CommandEnum } from "../consts/index.js";
@@ -15,7 +13,7 @@ export class ImportCommand implements Command {
 
     try {
       fileReader.read();
-      console.log(chalk.yellow(fileReader.toArray()));
+      console.log(fileReader.toArray());
     } catch (error) {
       if (!(error instanceof Error)) {
         throw error;
