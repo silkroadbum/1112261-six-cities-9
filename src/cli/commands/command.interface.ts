@@ -1,4 +1,4 @@
-import { CommandEnum } from "../consts/commands.js";
+import { CommandEnum } from '../consts/commands.js';
 
 export interface Command {
   getName(): CommandEnum;

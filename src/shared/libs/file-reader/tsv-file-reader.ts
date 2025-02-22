@@ -1,6 +1,6 @@
-import { readFileSync } from "node:fs";
+import { readFileSync } from 'node:fs';
 
-import { FileReader } from "./file-reader.interface.js";
+import { FileReader } from './file-reader.interface.js';
 import {
   Offer,
   HouseTypeEnum,
@@ -8,22 +8,22 @@ import {
   OfferCityEnum,
   User,
   UserType,
-} from "../../types/index.js";
+} from '../../types/index.js';
 
 export class TSVFileReader implements FileReader {
-  private rawData = "";
+  private rawData = '';
 
   constructor(private readonly filename: string) {}
 
   private validateRawData(): void {
     if (!this.rawData) {
-      throw new Error("File was not read");
+      throw new Error('File was not read');
     }
   }
 
   private parseRawDataToOffers(): Offer[] {
     return this.rawData
-      .split("\n")
+      .split('\n')
       .filter((row) => row.trim().length > 0)
       .map((line) => this.parseLineToOffer(line));
   }
@@ -52,7 +52,7 @@ export class TSVFileReader implements FileReader {
       commentsCount,
       latitude,
       longitude,
-    ] = line.split("\t");
+    ] = line.split('\t');
 
     return {
       title,
@@ -60,7 +60,7 @@ export class TSVFileReader implements FileReader {
       postDate: new Date(createDate),
       city: city as OfferCityEnum,
       previewImage,
-      photos: photos.split(","),
+      photos: photos.split(','),
       isPremium: this.parseBoolean(isPremium),
       isFavorite: this.parseBoolean(isFavorite),
       rating: this.parseNumber(rating),
@@ -68,7 +68,7 @@ export class TSVFileReader implements FileReader {
       rooms: this.parseNumber(rooms),
       guests: this.parseNumber(guests),
       price: this.parseNumber(price),
-      amenities: amenities.split(",") as Amenity[],
+      amenities: amenities.split(',') as Amenity[],
       user: this.parseUser(userName, email, avatar, password, userType),
       commentsCount: this.parseNumber(commentsCount),
       coordinates: this.parseCoordinates(latitude, longitude),
@@ -103,11 +103,11 @@ export class TSVFileReader implements FileReader {
   }
 
   parseBoolean(value: string): boolean {
-    return value === "true";
+    return value === 'true';
   }
 
   public read(): void {
-    this.rawData = readFileSync(this.filename, { encoding: "utf-8" });
+    this.rawData = readFileSync(this.filename, { encoding: 'utf-8' });
   }
 
   public toArray(): Offer[] {

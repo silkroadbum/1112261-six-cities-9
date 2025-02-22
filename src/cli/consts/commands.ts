@@ -1,5 +1,5 @@
 export enum CommandEnum {
-  Help = "--help",
-  Version = "--version",
-  Import = "--import",
+  Help = '--help',
+  Version = '--version',
+  Import = '--import',
 }

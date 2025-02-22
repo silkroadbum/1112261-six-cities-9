@@ -1,8 +1,8 @@
-import { Amenity } from "./amenity.type.js";
-import { Coordinates } from "./coordinates.type.js";
-import { HouseTypeEnum } from "./house-type.enum.js";
-import { OfferCityEnum } from "./offer-city.enum.js";
-import { User } from "./user.type.js";
+import { Amenity } from './amenity.type.js';
+import { Coordinates } from './coordinates.type.js';
+import { HouseTypeEnum } from './house-type.enum.js';
+import { OfferCityEnum } from './offer-city.enum.js';
+import { User } from './user.type.js';
 
 export type Offer = {
   title: string;

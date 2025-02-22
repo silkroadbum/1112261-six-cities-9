@@ -1,6 +1,6 @@
-import { Command } from "./command.interface.js";
-import { TSVFileReader } from "../../shared/libs/file-reader/index.js";
-import { CommandEnum } from "../consts/index.js";
+import { Command } from './command.interface.js';
+import { TSVFileReader } from '../../shared/libs/file-reader/index.js';
+import { CommandEnum } from '../consts/index.js';
 
 export class ImportCommand implements Command {
   public getName(): CommandEnum {
