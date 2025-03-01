@@ -26,7 +26,6 @@
       "https://example.com/img9.jpg",
       "https://example.com/img10.jpg"
     ],
-    "houseTypes": ["apartment", "house", "room", "hotel"],
     "amenities": [
       "Breakfast",
       "Air conditioning",
