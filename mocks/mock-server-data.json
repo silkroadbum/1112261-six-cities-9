@@ -1,6 +1,5 @@
 {
   "api": {
-    "categories": ["Книги", "Журналы", "Посуда", "Разное", "Диски"],
     "titles": ["Cozy Apartment", "Luxury House", "Village", "House", "Appartment"],
     "descriptions": [
       "A beautiful apartment in the heart of Paris, perfect for a weekend getaway.",
