@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 
 import { OfferGenerator } from './offer-generator.interface.js';
-import { MockServerData } from '../../types/mock-server-data.type.js';
+import { MockServerData } from '../../types/index.js';
 import { generateRandomValue, getRandomItem, getRandomItems, getRandomPhotos } from '../../helpers/index.js';
 import { Coordinates, HouseTypeEnum } from '../../types/index.js';
 
@@ -35,12 +35,7 @@ export class TSVOfferGenerator implements OfferGenerator {
     const isPremium = Boolean(generateRandomValue(0, 1));
     const isFavorite = Boolean(generateRandomValue(0, 1));
     const rating = generateRandomValue(MIN_RATING, MAX_RATING);
-    const houseType = getRandomItem([
-      HouseTypeEnum.Apartment,
-      HouseTypeEnum.Hotel,
-      HouseTypeEnum.House,
-      HouseTypeEnum.Room,
-    ]);
+    const houseType = getRandomItem(Object.values(HouseTypeEnum.Apartment));
     const rooms = generateRandomValue(MIN_ROOMS, MAX_ROOMS);
     const guests = generateRandomValue(MIN_GUESTS, MAX_GUESTS);
     const price = generateRandomValue(MIN_PRICE, MAX_PRICE);
