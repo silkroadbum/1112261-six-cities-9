@@ -1,9 +1,8 @@
 import dayjs from 'dayjs';
 
 import { OfferGenerator } from './offer-generator.interface.js';
-import { MockServerData } from '../../types/index.js';
 import { generateRandomValue, getRandomItem, getRandomItems, getRandomPhotos } from '../../helpers/index.js';
-import { Coordinates, HouseTypeEnum } from '../../types/index.js';
+import { Coordinates, HouseTypeEnum, MockServerData } from '../../types/index.js';
 
 const MIN_RATING = 1;
 const MAX_RATING = 5;
