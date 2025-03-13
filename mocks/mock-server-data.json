@@ -1,0 +1,58 @@
+{
+  "api": {
+    "titles": ["Cozy Apartment", "Luxury House", "Village", "House", "Appartment"],
+    "descriptions": [
+      "A beautiful apartment in the heart of Paris, perfect for a weekend getaway.",
+      "A spacious house with a garden, ideal for family vacations in Amsterdam."
+    ],
+    "cities": ["Paris", "Cologne", "Brussels", "Amsterdam", "Hamburg", "Dusseldorf"],
+    "previewImages": [
+      "https://example.com/preview1.jpg",
+      "https://example.com/preview2.jpg",
+      "https://example.com/preview3.jpg",
+      "https://example.com/preview4.jpg",
+      "https://example.com/preview5.jpg",
+      "https://example.com/preview6.jpg"
+    ],
+    "photos": [
+      "https://example.com/img1.jpg",
+      "https://example.com/img2.jpg",
+      "https://example.com/img3.jpg",
+      "https://example.com/img4.jpg",
+      "https://example.com/img5.jpg",
+      "https://example.com/img6.jpg",
+      "https://example.com/img7.jpg",
+      "https://example.com/img8.jpg",
+      "https://example.com/img9.jpg",
+      "https://example.com/img10.jpg"
+    ],
+    "amenities": [
+      "Breakfast",
+      "Air conditioning",
+      "Laptop friendly workspace",
+      "Baby seat",
+      "Washer",
+      "Towels",
+      "Fridge"
+    ],
+    "userNames": ["Anatolii", "Vlad", "Anton", "Denis"],
+    "emails": [
+      "snow@pisem.local",
+      "president@dka.local",
+      "fish@big.local",
+      "test@pisem.local",
+      "freedom@pisem.local",
+      "rolan@pochta.local",
+      "author@mir.local",
+      "test@lost.loca",
+      "kujo-fan@story.local"
+    ],
+    "avatars": ["user.jpg", "photo.jpg", "awesome-avatar.jpg", "roland.jpg", "smite.jpg", "coffee.jpg"],
+    "userTypes": ["regular", "pro"],
+    "coordinates": [
+      { "latitude": 48.85661, "longitude": "2.351499" },
+      { "latitude": 50.85661, "longitude": "5.351499" },
+      { "latitude": 30.85661, "longitude": "20.351499" }
+    ]
+  }
+}
