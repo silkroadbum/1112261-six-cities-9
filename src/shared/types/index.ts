@@ -6,3 +6,4 @@ export { UserType } from './user-type.type.js';
 export { User } from './user.type.js';
 export { OfferCityEnum } from './offer-city.enum.js';
 export { MockServerData } from './mock-server-data.type.js';
+export { Component } from './component.enum.js';
