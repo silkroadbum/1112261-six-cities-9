@@ -1,1 +1,4 @@
-export type UserType = 'regular' | 'pro';
+export enum UserTypeEnum {
+  Regular = 'regular',
+  Pro = 'pro',
+}

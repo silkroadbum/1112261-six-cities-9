@@ -2,7 +2,7 @@ import EventEmitter from 'node:events';
 import { createReadStream } from 'node:fs';
 
 import { FileReader } from './file-reader.interface.js';
-import { Offer, HouseTypeEnum, Amenity, OfferCityEnum, User, UserType } from '../../types/index.js';
+import { Offer, HouseTypeEnum, Amenity, OfferCityEnum, User, UserTypeEnum } from '../../types/index.js';
 
 const CHUNK_SIZE = 16384;
 
@@ -30,7 +30,6 @@ export class TSVFileReader extends EventEmitter implements FileReader {
       userName,
       email,
       avatar,
-      password,
       userType,
       commentsCount,
       latitude,
@@ -52,19 +51,18 @@ export class TSVFileReader extends EventEmitter implements FileReader {
       guests: this.parseNumber(guests),
       price: this.parseNumber(price),
       amenities: amenities.split(',') as Amenity[],
-      user: this.parseUser(userName, email, avatar, password, userType),
+      user: this.parseUser(userName, email, avatar, userType),
       commentsCount: this.parseNumber(commentsCount),
       coordinates: this.parseCoordinates(latitude, longitude),
     };
   }
 
-  parseUser(name: string, email: string, avatar: string, password: string, userType: string): User {
+  parseUser(name: string, email: string, avatar: string, userType: string): User {
     return {
       name,
       email,
       avatar,
-      password,
-      userType: userType as UserType,
+      userType: userType as UserTypeEnum,
     };
   }
 

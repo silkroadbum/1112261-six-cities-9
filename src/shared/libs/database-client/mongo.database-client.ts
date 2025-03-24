@@ -10,7 +10,7 @@ const RETRY_COUNT = 5;
 const RETRY_TIMEOUT = 1000;
 
 @injectable()
-export class MongoDatabaseCleint implements DatabaseClient {
+export class MongoDatabaseClient implements DatabaseClient {
   private mongoose: typeof Mongoose;
   private isConnected: boolean;
 
